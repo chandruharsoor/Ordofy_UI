@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [ORDOFY_V1]">
+  <listeners>
+    <listener class-name="com.ordofy.utilities.Reporting"/>
+  </listeners>
+  <test name="OrdofyApp_testing(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.ordofy.Testcases.TC_loginpage">
+        <methods>
+          <include name="teardown"/>
+          <include name="testcases"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.ordofy.Testcases.TC_loginpage -->
+    </classes>
+  </test> <!-- OrdofyApp_testing(failed) -->
+</suite> <!-- Failed suite [ORDOFY_V1] -->

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ORDOFY_V1">
+	<!-- Suite -->
+	<listeners>
+		<listener class-name="com.ordofy.utilities.Reporting" />
+	</listeners>
+	<test name="OrdofyApp_testing">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			  <class name="com.ordofy.Testcases.TC_loginpage" />
+			<!-- <class name="com.ordofy.Testcases.TC_loginDDT_001" /> -->
+		</classes>
+	</test>
+</suite>
